@@ -1,19 +1,22 @@
 # deep_visual_recog_hw3
 
 ## Reproduce
+### Training
 To reproduce you have to specify path to your datasets, 
 by **modifying variable **ROOT** in `hw3.py` line 34**, to the path to the folder containing your dataset folder,
 and the structure of root should look like
 ```
 root
-├── train_images
-│   ├── image 1...
-│   └── image 2...
-├── test_images
-│   ├── image 1...
-│   ├── image 2...
-│   └── image 3...
-├── pascal_train.json
-└── test.json
+├── dataset
+│   ├── train_images
+│   ├── pascal_train.json
+│   ├── test.json
+│   └── test_images
+└── logs
 ```
-The structures are already created in this repository, you can choose to simply put train_images and test_images to their respective folders.
+The structure is already created in this repository, you can choose to simply put train_images and test_images to their respective folders.
+
+After including the images, simply run `python3 hw3.py` then the program will starts to train for 40 epochs, which should have the similar result to the one uploaded to the google drive. 
+If you want to modify the number of epochs, please modify **line 271** in `hw3.py`. 
+### testing
+To produce the json for submission, simply run `python3 hw3.py --test <epoch>`, where <epoch> specify the number of epoch that the model is trained with, and a json file `0616215.json` will be created.
