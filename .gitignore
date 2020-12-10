@@ -1,0 +1,6 @@
+.DS_Store
+*.json
+*.jpg
+dataset/*
+logs/*
+__pycache__/*
