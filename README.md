@@ -16,7 +16,7 @@ root
 ```
 The structure is already created in this repository, you can choose to simply put train_images and test_images to their respective folders.
 
-After including the images, simply run `python3 hw3.py` then the program will starts to train for 40 epochs, which should have the similar result to the one uploaded to the google drive. 
+After including the images, simply run `python3 hw3.py` then the program will start to train for 40 epochs, which should have the similar result to the one uploaded to the google drive. 
 If you want to modify the number of epochs, please modify **line 271** in `hw3.py`. 
 ### testing
-To produce the json for submission, simply run `python3 hw3.py --test <epoch>`, where <epoch> specify the number of epoch that the model is trained with, and a json file `0616215.json` will be created.
+To produce the json for submission, simply run `python3 hw3.py --test <epoch>`, where `<epoch>` specify the number of epoch that the model is trained with, and a json file `0616215.json` will be created.
