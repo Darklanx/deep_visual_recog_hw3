@@ -1,6 +1,9 @@
 # deep_visual_recog_hw3
 
 ## Reproduce
+### Requirements
+Please first run `pip3 install -r requirements.txt` to make sure all packages required are properly installed.
+
 ### Training
 To reproduce you have to specify path to your datasets, 
 by **modifying variable **ROOT** in `hw3.py` line 34**, to the path to the folder containing your dataset folder,
